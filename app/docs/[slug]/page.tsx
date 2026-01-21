@@ -43,7 +43,7 @@ export default async function DocPage({ params }: { params: Promise<{ slug: stri
     return (
         <div className="flex flex-col md:flex-row gap-12 relative max-w-7xl mx-auto px-6 py-12">
             {/* Sidebar */}
-            <aside className="w-full md:w-64 flex-shrink-0">
+            <aside className="w-full md:w-64 mt-10 md:mt-0  flex-shrink-0">
                 <div className="sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto">
                     <DocsSidebar
                         docs={processedDocs}
