@@ -4,6 +4,9 @@ import { cmsClient } from '@/lib/sleekcms'
 
 const inter = Inter({ subsets: ['latin'] })
 
+export const fetchCache = "force-no-store";
+export const dynamic = "force-dynamic";
+
 import Navbar from '@/components/Navbar';
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {

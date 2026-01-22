@@ -3,6 +3,9 @@ import Link from "next/link";
 import HomeHero from "@/components/HomeHero";
 import { processDocSections, flattenTree } from "@/lib/doc-structure";
 
+export const fetchCache = "force-no-store";
+export const dynamic = "force-dynamic";
+
 export default async function Home() {
   const client = cmsClient();
 
